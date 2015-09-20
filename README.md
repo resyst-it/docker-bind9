@@ -1,5 +1,4 @@
-###Bind9 for docker running on Alpine 3.2
-
+##Bind9 for docker running on Alpine 3.2
 
 #####Command to use with this image :
 
