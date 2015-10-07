@@ -1,8 +1,8 @@
-FROM gliderlabs/alpine:latest
+FROM alpine/alpine:latest
 
-MAINTAINER resyst-it <support@resyst-it.fr>
+MAINTAINER resyst-it <florian.cauzardjarry@gmail.com>
 
-RUN apk-install bind
+RUN apk --update add bind
 
 EXPOSE 53
 
