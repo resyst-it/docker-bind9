@@ -1,4 +1,4 @@
-FROM alpine/alpine:latest
+FROM alpine:latest
 
 MAINTAINER resyst-it <florian.cauzardjarry@gmail.com>
 
