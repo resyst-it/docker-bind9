@@ -1,13 +1,14 @@
-##Bind9 for docker running on Alpine 3.4
+## Bind9 for Docker running on Alpine 3.4
 
-#####Command to use with this image :
-
-*docker run -d --name bind9 -p 53:53 -p 53:53/udp -v /absolute/paht/named.conf:/etc/bind/named.conf -v /absolute/path/exemple.com.db:/etc/bind/exemple.com.db resystit/bind9:latest*
-
+### Command to use with this image:
+```
+docker run -d --name bind9 -p 53:53 -p 53:53/udp -v /absolute/paht/named.conf:/etc/bind/named.conf -v /absolute/path/exemple.com.db:/etc/bind/exemple.com.db resystit/bind9:latest
+```
 **You can add directory or several files with the -v option.**
 
+### Authoritative nameserver
 This is a small basic file named.conf if you want to run bind as an
-authoritative nameserver :
+authoritative nameserver:
 ```
 options {
         directory "/var/bind";
@@ -52,8 +53,11 @@ options {
 // You can include files:
 //include "/etc/bind/example.conf";
 ```
+
+
+### Recursive DNS resolver
 This is a small basic file named.conf if you want to run bind as a
-recursive DNS resolver :
+recursive DNS resolver:
 ```
 options {
         directory "/var/bind";
