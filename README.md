@@ -1,4 +1,4 @@
-## Bind9 for Docker running on Alpine 3.8
+## Bind9 for Docker running on Alpine 3.9
 
 ### Command to use with this image:
 ```
