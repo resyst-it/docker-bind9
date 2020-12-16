@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 MAINTAINER resyst-it <florian.cauzardjarry@gmail.com>
 
-RUN apk --update add bind bind-dnssec-tools
+RUN apk --update --no-cache add bind bind-dnssec-tools
 
 EXPOSE 53
 
